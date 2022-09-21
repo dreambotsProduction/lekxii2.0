@@ -36,16 +36,16 @@ async def start(client, message):
     reply_markup = [
         [
             InlineKeyboardButton(
-                text="Bot Channel", url="https://t.me/TheCrowClub"
+                text="Bot Channel", url="https://t.me/dream_with_music"
             ),
             InlineKeyboardButton(
-                text="Repo", url="https://github.com/rozari0/NeedMusicRobot"
+                text="join", url="http://t.me/kerala_friendship"
             ),
             InlineKeyboardButton(text="Help", callback_data="helphome"),
         ],
         [
             InlineKeyboardButton(
-                text="Donate", url="https://www.buymeacoffee.com/rozario"
+                text="Donate", url="http://t.me/xox_dream"
             ),
         ],
     ]
@@ -135,6 +135,6 @@ async def help_home(_, query):
         [InlineKeyboardButton(text=i, callback_data=f"help_{i}")] for i in HELP
     ]
     await query.message.edit(
-        f"Hello **{query.from_user.first_name}**, I'm **@NeedMusicRobot**.\nI'm Here to download your music.",
+        f"Hello **{query.from_user.first_name}**, I'm **@Lekxibot**.\nI'm Here to download your music.",
         reply_markup=InlineKeyboardMarkup(button),
     )
